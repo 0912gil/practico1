@@ -34,15 +34,15 @@ function App() {
     <div className="App">
       <div className="checkboxes">
        
-        <label>
-          <input
-            type="checkbox"
-            name="fraudes"
-            checked={selectedDataTypes.fraudes}
-            onChange={handleCheckboxChange}
-          />
-          Fraudes Cripto
-  </label>
+       <label>
+         <input
+           type="checkbox"
+           name="fraudes"
+           checked={selectedDataTypes.fraudes}
+           onChange={handleCheckboxChange}
+         />
+         Fraudes Cripto
+ </label>
       </div>
       {items.map((item, index) => (
         <Item
