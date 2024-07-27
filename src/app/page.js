@@ -33,16 +33,16 @@ function App() {
   return (
     <div className="App">
       <div className="checkboxes">
+       
         <label>
           <input
             type="checkbox"
-            name="crisis"
-            checked={selectedDataTypes.crisis}
+            name="fraudes"
+            checked={selectedDataTypes.fraudes}
             onChange={handleCheckboxChange}
           />
-          Crisis Económicas
-        </label>
-       
+          Fraudes Cripto
+  </label>
       </div>
       {items.map((item, index) => (
         <Item
