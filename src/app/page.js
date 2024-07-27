@@ -42,15 +42,7 @@ function App() {
           />
           Crisis Económicas
         </label>
-        <label>
-          <input
-            type="checkbox"
-            name="fraudes"
-            checked={selectedDataTypes.fraudes}
-            onChange={handleCheckboxChange}
-          />
-          Fraudes Cripto
-        </label>
+       
       </div>
       {items.map((item, index) => (
         <Item
