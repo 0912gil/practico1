@@ -1,86 +1,92 @@
 .item {
-    border: 1px solid #ccc;
-    padding: 16px;
-    margin: 16px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    text-align: right;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #ddd; /* Borde gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 16px; /* Espaciado interno */
+  margin: 16px; /* Espaciado externo */
+  background-color: #fff; /* Fondo blanco */
+  max-width: 300px; /* Ancho máximo */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transición suave para el hover */
+  /* Para que el contenedor sea flexible */
+  flex: 1 1 auto;
+}
+
+.item:hover {
+  transform: translateY(-8px); /* Elevación al pasar el ratón */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+.item h2 {
+  font-size: 1.5rem; /* Tamaño de fuente del título */
+  margin-top: 0; /* Sin margen superior */
+  margin-bottom: 8px; /* Margen inferior */
+  color: #333; /* Color del texto */
+}
+
+.item p {
+  margin: 8px 0; /* Margen vertical para los párrafos */
+  color: #555; /* Color del texto */
+}
+
+.item img {
+  width: 100%; /* Imagen de ancho completo del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+  border-radius: 4px; /* Bordes redondeados de la imagen */
+  margin-bottom: 12px; /* Margen inferior de la imagen */
+}
+
+.caracteristicas {
+  border-top: 1px solid #eee; /* Borde superior para separar características */
+  padding-top: 12px; /* Espaciado superior */
+}
+
+.caracteristicas p {
+  margin: 4px 0; /* Margen vertical para los párrafos de características */
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño para las características */
+}
+
+.caracteristicas strong {
+  color: #222; /* Color del texto en negrita */
+}
+
+/* Consultas de medios para hacer el diseño responsivo */
+
+/* Para pantallas de hasta 600px de ancho (teléfonos) */
+@media (max-width: 600px) {
+  .item {
+    max-width: 100%; /* Ajusta el ancho máximo al 100% del contenedor padre */
+    margin: 8px; /* Reduce el margen para pantallas más pequeñas */
+    padding: 12px; /* Reduce el relleno para ahorrar espacio */
   }
-  
-  .item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .item img {
-    max-width: 25%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 16px;
-    text-align: right;
-  }
-  
+
   .item h2 {
-    font-size: 1.5em;
-    margin-bottom: 12px;
-    color: #333;
+    font-size: 1.25rem; /* Reduce el tamaño de fuente del título */
   }
-  
+
   .item p {
-    font-size: 1em;
-    margin-bottom: 12px;
-    color: #666;
-    text-align: justify;
+    font-size: 0.875rem; /* Reduce el tamaño de fuente para párrafos */
   }
-  
-  .caracteristicas {
-    text-align: left;
-    margin-top: 16px;
-  }
-  
+
   .caracteristicas p {
-    margin: 8px 0;
-    font-size: 0.9em;
-    color: #555;
+    font-size: 0.8rem; /* Reduce el tamaño de fuente para las características */
   }
-  
-  /* Responsiveness */
-  @media (max-width: 768px) {
-    .item {
-      padding: 12px;
-      margin: 12px;
-    }
-  
-    .item img {
-      margin-bottom: 12px;
-    }
-  
-    .item h2 {
-      font-size: 1.3em;
-    }
-  
-    .item p {
-      font-size: 0.9em;
-    }
+}
+
+/* Para pantallas de entre 601px y 1024px de ancho (tabletas y pantallas medianas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .item {
+    max-width: 80%; /* Ajusta el ancho máximo al 80% del contenedor padre */
   }
-  
-  @media (max-width: 480px) {
-    .item {
-      padding: 8px;
-      margin: 8px;
-    }
-  
-    .item img {
-      margin-bottom: 8px;
-    }
-  
-    .item h2 {
-      font-size: 1.2em;
-    }
-  
-    .item p {
-      font-size: 0.8em;
-    }
+
+  .item h2 {
+    font-size: 1.4rem; /* Ajusta el tamaño de fuente del título */
   }
+
+  .item p {
+    font-size: 0.9rem; /* Ajusta el tamaño de fuente para párrafos */
+  }
+
+  .caracteristicas p {
+    font-size: 0.85rem; /* Ajusta el tamaño de fuente para las características */
+  }
+}
