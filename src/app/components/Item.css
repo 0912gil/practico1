@@ -29,7 +29,7 @@
 }
 
 .item img {
-  width: 100%; /* Imagen de ancho completo del contenedor */
+  width: 50%; /* Imagen de ancho completo del contenedor */
   height: auto; /* Mantener la proporción de la imagen */
   border-radius: 4px; /* Bordes redondeados de la imagen */
   margin-bottom: 12px; /* Margen inferior de la imagen */
