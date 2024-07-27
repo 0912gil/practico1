@@ -5,7 +5,7 @@
   padding: 16px; /* Espaciado interno */
   margin: 16px; /* Espaciado externo */
   background-color: #fff; /* Fondo blanco */
-  max-width: 300px; /* Ancho máximo */
+  max-width: 1200px; /* Ancho máximo */
   transition: transform 0.3s, box-shadow 0.3s; /* Transición suave para el hover */
   /* Para que el contenedor sea flexible */
   flex: 1 1 auto;
@@ -29,10 +29,11 @@
 }
 
 .item img {
-  width: 100%; /* Imagen de ancho completo del contenedor */
+  width: 35%; /* Imagen de ancho completo del contenedor */
   height: auto; /* Mantener la proporción de la imagen */
   border-radius: 4px; /* Bordes redondeados de la imagen */
   margin-bottom: 12px; /* Margen inferior de la imagen */
+  text-align: center;
 }
 
 .caracteristicas {
@@ -69,24 +70,5 @@
 
   .caracteristicas p {
     font-size: 0.8rem; /* Reduce el tamaño de fuente para las características */
-  }
-}
-
-/* Para pantallas de entre 601px y 1024px de ancho (tabletas y pantallas medianas) */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .item {
-    max-width: 80%; /* Ajusta el ancho máximo al 80% del contenedor padre */
-  }
-
-  .item h2 {
-    font-size: 1.4rem; /* Ajusta el tamaño de fuente del título */
-  }
-
-  .item p {
-    font-size: 0.9rem; /* Ajusta el tamaño de fuente para párrafos */
-  }
-
-  .caracteristicas p {
-    font-size: 0.85rem; /* Ajusta el tamaño de fuente para las características */
   }
 }
